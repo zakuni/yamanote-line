@@ -1,0 +1,7 @@
+doctype html
+html
+  head
+    title= [@title, "山手線の会"].compact.join(" | ")
+    = javascript_include_tag 'jquery'
+  body
+    = yield

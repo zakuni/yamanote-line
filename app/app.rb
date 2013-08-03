@@ -58,5 +58,12 @@ module YamanoteLine
     #     render 'errors/505'
     #   end
     #
+
+    Slim::Engine.default_options[:pretty] = true
+
+    get "/" do
+      render :slim, :index
+    end
+
   end
 end
