@@ -2,6 +2,7 @@ doctype html
 html
   head
     title= [@title, "山手線の会"].compact.join(" | ")
+    = stylesheet_link_tag 'application'
     = javascript_include_tag 'jquery'
   body
     = yield
